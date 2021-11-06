@@ -2,8 +2,12 @@
     "name": "@eeue56/ts-assert",
     "version": "0.0.1",
     "description": "Assert, but typesafe in typescript",
-    "main": "index.js",
+    "main": "build/ts-assert.js",
+    "typings": "build/ts-assert.d.ts",
     "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "watch": "tsc -w -p tsconfig.json",
+        "prepack": "npm run build",
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "npx prettier --write ."
     },
@@ -13,7 +17,9 @@
     },
     "keywords": [
         "typescript",
-        "hiraeth"
+        "hiraeth",
+        "assert",
+        "testing"
     ],
     "author": "eeue56",
     "license": "BSD-3-Clause",
@@ -22,6 +28,7 @@
     },
     "homepage": "https://github.com/eeue56/ts-assert#readme",
     "devDependencies": {
+        "@types/node": "^16.11.6",
         "prettier": "github:eeue56/prettier#feat/spacing-around-square-brackets",
         "typescript": "^4.4.4"
     }
