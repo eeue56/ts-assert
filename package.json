@@ -1,6 +1,6 @@
 {
     "name": "@eeue56/ts-assert",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Assert, but typesafe in typescript",
     "main": "build/ts-assert.js",
     "typings": "build/ts-assert.d.ts",
