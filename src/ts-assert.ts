@@ -6,7 +6,7 @@ import * as assert from "assert";
 export function deepStrictEqual<t>(
     actual: t,
     expected: t,
-    message: string | Error
+    message?: string | Error
 ): void {
     return assert.deepStrictEqual(actual, expected, message);
 }
@@ -17,7 +17,7 @@ export function deepStrictEqual<t>(
 export function strictEqual<t>(
     actual: t,
     expected: t,
-    message: string | Error
+    message?: string | Error
 ): void {
     return assert.strictEqual(actual, expected, message);
 }
@@ -39,7 +39,7 @@ export function notDeepStrictEqual<t>(
 export function notStrictEqual<t>(
     actual: t,
     expected: t,
-    message: string | Error
+    message?: string | Error
 ): void {
     return assert.notStrictEqual(actual, expected, message);
 }
